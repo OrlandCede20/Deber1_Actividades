@@ -16,8 +16,9 @@
         android:layout_marginEnd="16dp"
         android:text="DATOS PERSONALES"
         android:textAlignment="center"
-        android:textColor="#FF0000"
+        android:textColor="#3F51B5"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -26,6 +27,25 @@
         app:layout_constraintVertical_bias="0.01" />
 
 
+    <TextView
+        android:id="@+id/lblTitulo3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Autor: Cedeño Orlando - 6to Ing. Software"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
     <Button
         android:id="@+id/btnEnviar"
         android:layout_width="wrap_content"
@@ -33,28 +53,29 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="112dp"
         android:layout_marginBottom="49dp"
+        android:background="@drawable/btn_enviar"
         android:onClick="btnEnviar"
         android:text="Enviar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTelefono"
-        app:layout_constraintVertical_bias="0.501"
+        app:layout_constraintVertical_bias="0.498"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnLimpiar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="90dp"
         android:layout_marginTop="15dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="292dp"
         android:layout_marginBottom="49dp"
+        android:background="@drawable/btn_limpiar"
         android:onClick="Limpieza"
         android:text="Limpiar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnEnviar"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTelefono"
+        app:layout_constraintVertical_bias="0.498"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -163,7 +184,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="number"
+        android:maxLength="10"
         android:textColor="#0027FF"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -195,13 +217,15 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="textCapCharacters"
+        android:maxLength="500"
         android:textColor="#0027FF"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblNombre"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        />
 
     <EditText
         android:id="@+id/txtFechaNac"
@@ -211,7 +235,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
-        android:inputType="date"
+        android:inputType="datetime|date"
         android:textColor="#0027FF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -231,23 +255,25 @@
         tools:ignore="MissingConstraints">
 
         <RadioButton
-            android:id="@+id/rbFemenino"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Femenino"
-            android:textColor="#0027FF"
-            android:textColorHighlight="#FF0000"
-            android:textColorLink="#FF0505"
-            android:textSize="16sp" />
-
-        <RadioButton
             android:id="@+id/rbMasculino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="#06FF10"
             android:text="Masculino"
             android:textColor="#0027FF"
             android:textColorHighlight="#FF0000"
             android:textColorLink="#FF0000"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbFemenino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#06FF10"
+            android:text="Femenino"
+            android:textColor="#0027FF"
+            android:textColorHighlight="#FF0000"
+            android:textColorLink="#FF0505"
             android:textSize="16sp" />
     </RadioGroup>
 
@@ -260,7 +286,8 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="17dp"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="textCapCharacters"
+        android:maxLength="200"
         android:textColor="#0027FF"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/lblGenero"
@@ -278,6 +305,7 @@
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:inputType="phone"
+        android:maxLength="10"
         android:textColor="#0027FF"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"

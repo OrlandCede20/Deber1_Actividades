@@ -8,56 +8,50 @@
     tools:context=".DatosRegistrados">
 
     <TextView
-        android:id="@+id/lblTelefono"
-        android:layout_width="match_parent"
+        android:id="@+id/lblTitulo5"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="380dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Autor: Cedeño Orlando - 6to Ing. Software"
         android:textAlignment="center"
-        android:textColor="#FF0000"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-16dp" />
+        app:layout_constraintVertical_bias="0.913" />
 
     <TextView
-        android:id="@+id/lblCedula3"
-        android:layout_width="match_parent"
+        android:id="@+id/lblTitulo4"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="ÉXITO!"
         android:textAlignment="center"
-        android:textColor="#FF0000"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintVertical_bias="0.01" />
 
     <TextView
-        android:id="@+id/lblNombres"
+        android:id="@+id/lblTitulo2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="232dp"
         android:textAlignment="center"
-        android:textColor="#FF0000"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <TextView
-        android:id="@+id/lblFechaNaci"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
-        android:textAlignment="center"
-        android:textColor="#FF0000"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <TextView
-        android:id="@+id/lblCiudad2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="216dp"
-        android:textAlignment="center"
-        android:textColor="#FF0000"
+        android:textColor="#3F51B5"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
@@ -66,33 +60,94 @@
         android:id="@+id/lblGenero2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="276dp"
+        android:layout_marginTop="492dp"
         android:textAlignment="center"
-        android:textColor="#FF0000"
+        android:textColor="#3F51B5"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-16dp" />
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/lblCorreo2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="328dp"
+        android:layout_marginTop="544dp"
         android:textAlignment="center"
-        android:textColor="#FF0000"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-16dp" />
-
-    <TextView
-        android:id="@+id/lblTitulo2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:textAlignment="center"
-        android:textColor="#FF0000"
+        android:textColor="#3F51B5"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/lblTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="596dp"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/lblNombres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/lblCedula3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="276dp"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/lblFechaNaci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="376dp"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/lblCiudad2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="432dp"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/imGenero"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="12dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/lblTitulo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ok"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
